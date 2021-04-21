@@ -36,11 +36,11 @@ class Snake(Canvas):
         self.pack()
 
     def loadResources(self):
-        self.headImage = Image.open("images/head4.png")
+        self.headImage = Image.open("images/head.png")
 
         self.head = ImageTk.PhotoImage(self.headImage.resize((BODYSIZE, BODYSIZE), Image.ANTIALIAS))
         self.body = ImageTk.PhotoImage(Image.open("images/body.png").resize((BODYSIZE, BODYSIZE), Image.ANTIALIAS))
-        self.apple = ImageTk.PhotoImage(Image.open("images/apple0.png").resize((BODYSIZE, BODYSIZE), Image.ANTIALIAS))
+        self.apple = ImageTk.PhotoImage(Image.open("images/apple.png").resize((BODYSIZE, BODYSIZE), Image.ANTIALIAS))
 
     def beginplay(self):
         self.delay = STARTDELAY
