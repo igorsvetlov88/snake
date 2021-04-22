@@ -5,7 +5,7 @@ from PIL import Image, ImageTk
 # значения ниже можно менять
 WIDTH = 500  # ширина змейки
 HEIGHT = 500  # высота змейки
-BODYSIZE = 25  # 1 ячейка
+BODYSIZE = 25  # 1 сегмент
 STARTDELAY = 200  # начальный таймер для передвижения
 MINDELAY = 50  # минимальный таймер для передвижения
 STEPDELAY = 10  # снижение таймера на 10 каждый раз когда змейка ест яблоко
@@ -188,6 +188,6 @@ hs = root.winfo_screenheight()
 x = int(ws / 2 - WIDTH / 2)
 y = int(hs / 2 - HEIGHT / 2)
 
-root.geometry("+{0}+{1}".format(x, y))
+root.geometry("+{0}+{1}".format(x, y)) #змейка всегда будет в середине экрана
 
 root.mainloop()
